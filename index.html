@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Scrolling Into the Void — An immersive interactive storytelling experience about social media scrolling addiction." />
+  <title>Scrolling Into the Void</title>
+
+  <!-- Open Graph / Social Media Preview -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Scrolling Into the Void" />
+  <meta property="og:description" content="An immersive interactive storytelling experience about social media scrolling addiction." />
+  <meta property="og:image" content="og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Scrolling Into the Void" />
+  <meta name="twitter:description" content="An immersive interactive storytelling experience about social media scrolling addiction." />
+  <meta name="twitter:image" content="og-image.png" />
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== Progress Bar ===== -->
+  <div class="progress-bar" id="progressBar"></div>
+
+  <!-- ===== Calm Overlay (triggered by CTA) ===== -->
+  <div class="calm-overlay" id="calmOverlay">
+    <div class="calm-text">Breathe.</div>
+    <div class="calm-sub">You just took the first step. Close your eyes for a moment.</div>
+  </div>
+
+  <!-- ============================================
+       SECTION 1 — HERO: "It Starts Innocent"
+       ============================================ -->
+  <section id="hero" data-section="hero">
+
+    <!-- Floating social media UI cards -->
+    <div class="floating-elements" id="floatingElements">
+      <div class="float-card fc-1"><span class="icon">❤️</span> 2.4k likes</div>
+      <div class="float-card fc-2"><span class="icon">💬</span> 384 comments</div>
+      <div class="float-card fc-3"><span class="icon">🔔</span> New follower!</div>
+      <div class="float-card fc-4"><span class="icon">🔥</span> Trending now</div>
+      <div class="float-card fc-5"><span class="icon">📸</span> Story viewed</div>
+      <div class="float-card fc-6"><span class="icon">✨</span> 12 new posts</div>
+    </div>
+
+    <div class="hero-content">
+      <p class="hero-subtitle reveal">Chapter I</p>
+      <h1 class="hero-title reveal reveal-delay-1">Just one scroll...</h1>
+      <p class="hero-tagline reveal reveal-delay-2">
+        It always starts this way. A quick glance. A harmless tap. What's the worst that could happen?
+      </p>
+      <div class="scroll-cue reveal reveal-delay-3">
+        <span>Scroll to begin</span>
+        <span class="arrow">↓</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       SECTION 2 — LOOP: "You Keep Scrolling"
+       ============================================ -->
+  <section id="loop" data-section="loop">
+    <p class="section-label reveal">Chapter II</p>
+    <h2 class="loop-title reveal reveal-delay-1"><span>You keep scrolling.</span></h2>
+
+    <div class="feed-grid">
+      <!-- Card 1 -->
+      <div class="feed-card reveal reveal-delay-1">
+        <div class="card-header">
+          <div class="card-avatar av1">😊</div>
+          <div>
+            <div class="card-name">@endless_feed</div>
+            <div class="card-time">2 min ago</div>
+          </div>
+        </div>
+        <div class="card-body">Just posted another photo. Doesn't matter what it is. You'll scroll past it anyway.</div>
+        <div class="card-bar"><div class="card-bar-fill" style="--bar-width: 85%;"></div></div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="feed-card reveal reveal-delay-2">
+        <div class="card-header">
+          <div class="card-avatar av2">🎭</div>
+          <div>
+            <div class="card-name">@dopamine_hit</div>
+            <div class="card-time">5 min ago</div>
+          </div>
+        </div>
+        <div class="card-body">Here's something mildly interesting. Just enough to keep you here. Not enough to remember.</div>
+        <div class="card-bar"><div class="card-bar-fill" style="--bar-width: 62%;"></div></div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="feed-card reveal reveal-delay-3">
+        <div class="card-header">
+          <div class="card-avatar av3">🌀</div>
+          <div>
+            <div class="card-name">@the_algorithm</div>
+            <div class="card-time">8 min ago</div>
+          </div>
+        </div>
+        <div class="card-body">We know what you like. We know what you fear. Scroll a little more and we'll show you.</div>
+        <div class="card-bar"><div class="card-bar-fill" style="--bar-width: 94%;"></div></div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="feed-card reveal reveal-delay-4">
+        <div class="card-header">
+          <div class="card-avatar av4">⏰</div>
+          <div>
+            <div class="card-name">@time_thief</div>
+            <div class="card-time">12 min ago</div>
+          </div>
+        </div>
+        <div class="card-body">You said "just five minutes." That was forty-five minutes ago. But who's counting?</div>
+        <div class="card-bar"><div class="card-bar-fill" style="--bar-width: 78%;"></div></div>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="feed-card reveal reveal-delay-1">
+        <div class="card-header">
+          <div class="card-avatar av5">🪞</div>
+          <div>
+            <div class="card-name">@compare_yourself</div>
+            <div class="card-time">18 min ago</div>
+          </div>
+        </div>
+        <div class="card-body">Everyone else seems to have it figured out. Everyone except you. Keep scrolling.</div>
+        <div class="card-bar"><div class="card-bar-fill" style="--bar-width: 55%;"></div></div>
+      </div>
+
+      <!-- Card 6 -->
+      <div class="feed-card reveal reveal-delay-2">
+        <div class="card-header">
+          <div class="card-avatar av6">🔁</div>
+          <div>
+            <div class="card-name">@repeat_loop</div>
+            <div class="card-time">23 min ago</div>
+          </div>
+        </div>
+        <div class="card-body">This looks familiar. You've seen this before. But you'll still watch it again.</div>
+        <div class="card-bar"><div class="card-bar-fill" style="--bar-width: 70%;"></div></div>
+      </div>
+    </div>
+
+    <p class="loop-caption reveal">...and the feed never ends.</p>
+  </section>
+
+  <!-- ============================================
+       SECTION 3 — OVERLOAD: "Too Much, Too Fast"
+       ============================================ -->
+  <section id="overload" data-section="overload">
+    <!-- Notification container (JS will spawn popups here) -->
+    <div class="notif-container" id="notifContainer"></div>
+
+    <p class="section-label reveal">Chapter III</p>
+    <h2 class="glitch-title reveal" data-text="TOO MUCH.">TOO MUCH.</h2>
+    <p class="overload-sub reveal reveal-delay-1">Notifications. Likes. Shares. Comments. It never stops.</p>
+
+    <button class="mute-btn" id="muteBtn">⚡ Mute the Chaos</button>
+  </section>
+
+  <!-- ============================================
+       SECTION 4 — VOID: "And Then... Nothing"
+       ============================================ -->
+  <section id="void" data-section="void">
+    <div class="void-text reveal">
+      And then...<br>nothing.<span class="void-cursor"></span>
+      <span>The screen glows. But you feel empty.</span>
+    </div>
+  </section>
+
+  <!-- ============================================
+       SECTION 5 — WAKE UP: "Look Up"
+       ============================================ -->
+  <section id="wakeup" data-section="wakeup">
+    <p class="section-label reveal">Chapter V</p>
+    <h2 class="wakeup-title reveal reveal-delay-1">Look Up.</h2>
+    <p class="wakeup-message reveal reveal-delay-2">
+      The world didn't stop while you were scrolling. The sky changed colors. Someone smiled at you.
+      There's a whole life waiting — just beyond the screen.
+    </p>
+    <button class="cta-btn reveal reveal-delay-3" id="ctaBtn">Put the Phone Down</button>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
