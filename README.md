@@ -94,7 +94,7 @@ No install or build step needed.
 
 ```bash
 # Clone the repository
-git clone https://github.com/<your-username>/iit-patna.git
+git clone https://github.com/minajuddin0510/iit-patna.git
 
 # Open in browser
 open index.html
